@@ -1,0 +1,57 @@
+@using BonProfCa.Models
+
+@model ConfirmMailModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            /* max-width: 600px; */
+            width: 100%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Activation de votre compte</h2>
+        @* <h2>Bienvenu(e) @Model.Receiver.FirstName</h2> *@
+        <p>Merci d'avoir inscrit sur notre application, pour activer votre comptre clicquer sur valider</p>
+        <a href="@Model.ConfirmLink" class="btn">Valider</a>
+        <p>Merci et à bientôt</p>
+        <hr>
+        <p class="footer">Visiter notre site: <a href="@Model.WebsiteLink">Notre site</a></p>
+    </div>
+</body>
+</html>
