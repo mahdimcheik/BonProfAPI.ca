@@ -45,16 +45,16 @@ public static class EnvironmentVariables
     public static int SMTP_PORT => GetEnvVarInt("SMTP_PORT", 543);
     public static string SMTP_LOGIN => GetEnvVar("SMTP_LOGIN", "");
     public static string SMTP_KEY => GetEnvVar("SMTP_KEY", "");
-    public static string DO_NO_REPLY_MAIL => GetEnvVar("DO_NO_REPLY_MAIL", "do-not-reply@sempaigo.com");
+    public static string DO_NO_REPLY_MAIL => GetEnvVar("DO_NO_REPLY_MAIL", "do-not-reply@bonprof.ca");
 
     // default admin email and password
-    public static string SUPER_ADMIN_EMAIL => GetEnvVar("ADMIN_EMAIL", "super.admin@sempaigo.com");
+    public static string SUPER_ADMIN_EMAIL => GetEnvVar("ADMIN_EMAIL", "super.admin@bonprof.ca");
     public static string SUPER_ADMIN_PASSWORD => GetEnvVar("ADMIN_PASSWORD", "SuperPassword123!");
 
    
     // minio
-    public static string MINIO_BUCKETNAME => GetEnvVar("MINIO_BUCKETNAME", "sempaigo");
-    public static string MINIO_ENDPOINT => GetEnvVar("MINIO_ENDPOINT", "sempaigo");
+    public static string MINIO_BUCKETNAME => GetEnvVar("MINIO_BUCKETNAME", "bonprofca");
+    public static string MINIO_ENDPOINT => GetEnvVar("MINIO_ENDPOINT", "bonprofca");
     public static string MINIO_ACCESSKEY => GetEnvVar("MINIO_ACCESSKEY", "minioadmin");
     public static string MINIO_SECRETKEY => GetEnvVar("MINIO_SECRETKEY", "minioadmin");
     

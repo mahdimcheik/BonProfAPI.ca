@@ -26,7 +26,7 @@
         "SMTP_LOGIN": "brevo-login@smtp-brevo.com",
         "SMTP_KEY": "xsmtpsib-key",
         "SMTP_PORT": "587",
-        "DO_NO_REPLY_MAIL": "do-not-reply@bonprof.fr",
+        "DO_NO_REPLY_MAIL": "do-not-reply@bonprof.ca",
         "MINIO_BUCKETNAME": "bonprofca",
         "MINIO_ENDPOINT": "files.bonprof.fr",
         "MINIO_ACCESSKEY": "minioadmin",
